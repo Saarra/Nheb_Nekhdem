@@ -9,7 +9,11 @@ exports.Register=[
 
 ]
  
+exports.loginRules=[
 
+    body("email","email valid").isEmail(),
+    body('password','password must be at least 8 characters').isLength({min:8})
+]
 
 exports.Validator=(req,res,next)=>{
     const result=validationResult(req)
