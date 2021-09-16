@@ -25,6 +25,13 @@ function Register() {
             <input type="text" placeholder="اسم" />
             <input type="email" placeholder="بريد الالكتروني" />
             <input type="password" placeholder="كلمه السر" />
+            <input type="password" placeholder="رقم الهاتف" />
+            <label for="pet-select">دورك</label>
+            <select name="pets" id="pet-select">
+                <option value="Client">حريف</option>
+                <option value="PP">تاجر</option>
+                <option value="PH">موارد بشرية</option>
+            </select>
             <button>سجل الأن</button>
           </form>
         </div>
