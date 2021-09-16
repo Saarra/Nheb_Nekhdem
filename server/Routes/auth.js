@@ -8,11 +8,11 @@ const {Register,Validator, loginRules}=require('../middleware/validator')
 router.post('/signup',Register,Validator,signUp)
 
 //desc signin
- router.post('/signin',loginRules,signIn)
+ router.post('/signin',loginRules,Validator,signIn)
 
  //desc user auth
 
- router.get('/me',isAuth,(req,res)=>res.send('token'))
+ router.get('/me',isAuth,(req,res)=>res.send({user:req.user}))
 
 
 
